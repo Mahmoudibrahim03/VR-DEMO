@@ -1,0 +1,143 @@
+@import "./normalize.css";
+@import"./variables.scss";
+// @import "./fonts.scss";
+
+html {
+    font-size: 10px;
+
+    body {
+        font-family: $font-family;
+        color: $secondary-color;
+        font-size: 1.6rem;
+        font-weight: 300;
+
+        * {
+            margin: 0;
+            padding: 0;
+            // box-sizing: content-box;
+        }
+
+        ul {
+            li {
+                list-style: none;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+button.find-us {
+    border: none;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4.2rem;
+    background-color: $primary-color;
+    border-radius: 2.2rem;
+    letter-spacing: 0.1px;
+    text-transform: capitalize;
+    line-height: 45px;
+    letter-spacing: 0.1px;
+    font-size: 1.5rem;
+    box-sizing: content-box;
+    color: $text-color;
+    margin: 0 17px;
+    font-weight: 300;
+
+    &:hover {
+        background-color: $text-color;
+        color: $buttons-text-hover !important;
+    }
+
+}
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+
+    @media all and (max-width: 1000px) {
+        height: calc(100vh - 10rem);
+    }
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    padding-left: 7rem;
+    color: #fff;
+    font-size: 3rem;
+    opacity: 1;
+
+    @media all and (max-width: 700px) {
+        display: none;
+    }
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    padding-right: 7rem;
+    color: #fff;
+    font-size: 3rem;
+    opacity: 1;
+
+    @media all and (max-width: 700px) {
+        display: none;
+    }
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    align-items: center;
+    transform: translate(0, -10px);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-sizing: content-box;
+    border: 2px solid #fff !important;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background-color: $primary-color !important;
+    border: 2px solid $primary-color !important;
+    opacity: 1;
+}
+
+.more-button {
+    border: none;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4.2rem;
+    background-color: $primary-color;
+    border-radius: 2.2rem;
+    letter-spacing: 0.1px;
+    text-transform: capitalize;
+    line-height: 45px;
+    letter-spacing: 0.1px;
+    font-size: 1.5rem;
+    border: 1px solid #303030;
+    box-sizing: content-box;
+    color: $text-color;
+    margin: 0 17px;
+    font-weight: 300;
+
+    &:hover {
+        background-color: $text-color;
+        color: $buttons-text-hover !important;
+    }
+
+}
