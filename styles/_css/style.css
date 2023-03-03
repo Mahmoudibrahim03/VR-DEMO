@@ -361,7 +361,7 @@ body section.prespective {
   padding: 14.5rem 0;
   display: flex;
   justify-content: center;
-  background-image: url("../assets/images/background-1.jpg");
+  background-image: url("../../assets/images/background-1.jpg");
   background-color: #1c1a27;
   background-size: cover;
   background-position: center;
@@ -442,14 +442,94 @@ body section.prespective .feature .item-description {
   margin-bottom: 3.2rem;
 }
 body .product-wrapper {
-  background-image: url("../assets/images/background-2.jpg");
+  background-image: url("../../assets/images/background-2.jpg");
   background-color: #1c1a27;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-body section.product-preview {
-  background-color: #1b1a26;
+body .product-wrapper .product-brief {
+  font-size: 10px;
+}
+body .product-wrapper .product-brief .info {
+  padding-left: 10%;
+  padding-right: 2%;
+  max-width: 42rem;
+  box-sizing: content-box;
+}
+@media all and (max-width: 1106px) {
+  body .product-wrapper .product-brief .info {
+    padding: 0;
+  }
+}
+body .product-wrapper .product-brief .info .title h2 {
+  color: #fff;
+  font-size: 5em;
+  line-height: 5rem;
+  font-style: normal;
+  font-weight: 300;
+}
+body .product-wrapper .product-brief .info .title h2 b {
+  margin-right: 1.2rem;
+}
+body .product-wrapper .product-brief .info .title hr {
+  height: 5px;
+  background-color: #ea3266;
+  width: 5rem;
+  margin: 3.5rem 0;
+  margin-bottom: 6rem;
+  opacity: 1;
+}
+@media all and (max-width: 1106px) {
+  body .product-wrapper .product-brief .info .title {
+    padding: 0 1rem;
+  }
+}
+body .product-wrapper .product-brief .description p {
+  color: #c0c0c1;
+  font-size: 1.6em;
+  line-height: 30px;
+  font-weight: 300;
+}
+body .product-wrapper .product-brief .description .more-button {
+  margin-left: 0;
+  margin-top: 3.2rem;
+}
+@media all and (max-width: 1106px) {
+  body .product-wrapper .product-brief .description {
+    padding: 0 1rem;
+  }
+}
+body .product-wrapper .product-brief .images-container {
+  position: relative;
+  display: flex;
+}
+@media all and (max-width: 1106px) {
+  body .product-wrapper .product-brief .images-container {
+    margin-bottom: 2rem;
+    width: 90% !important;
+    margin-right: 2rem;
+  }
+}
+body .product-wrapper .product-brief .images-container img {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  z-index: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body .product-wrapper .product-brief .images-container img.active {
+  position: absolute;
+  right: -10%;
+  top: 0;
+  z-index: 0;
+  transform: scale(0.9);
+}
+@media all and (max-width: 486px) {
+  body .product-wrapper .product-brief {
+    font-size: 9px;
+  }
 }
 body section.product-preview img {
   max-width: 1386px;
@@ -524,12 +604,18 @@ body section.experiences .exper-next {
 body section.experiences .exper-prev {
   left: 22%;
 }
-body .comparative {
-  padding-top: 200px;
-  text-align: center;
+body .experiences-wrapper {
+  background-image: url("../../assets/images/background-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #1b1926;
 }
-body .comparative .sec-title h2 {
+body .experiences-wrapper .comparative {
+  padding-top: 200px;
+  text-align: center;
+}
+body .experiences-wrapper .comparative .sec-title h2 {
   color: #fff;
   font-size: 5rem;
   line-height: 5rem;
@@ -537,10 +623,10 @@ body .comparative .sec-title h2 {
   font-weight: 300;
   text-align: center;
 }
-body .comparative .sec-title h2 b {
+body .experiences-wrapper .comparative .sec-title h2 b {
   margin-right: 1.2rem;
 }
-body .comparative .sec-title hr {
+body .experiences-wrapper .comparative .sec-title hr {
   height: 5px;
   background-color: #ea3266;
   width: 5rem;
@@ -548,7 +634,7 @@ body .comparative .sec-title hr {
   margin-bottom: 6rem;
   opacity: 1;
 }
-body .comparative .table {
+body .experiences-wrapper .comparative .table {
   max-width: 1230px;
   margin: 0 auto;
   text-align: center;
@@ -556,36 +642,36 @@ body .comparative .table {
   border-bottom: 1px solid #4b4d62;
   padding-left: 1rem;
 }
-body .comparative .table > * {
+body .experiences-wrapper .comparative .table > * {
   display: grid;
   grid-template-columns: 55% 1fr 1fr 1fr;
   border-bottom: 1px dashed #4b4d62;
 }
 @media all and (max-width: 770px) {
-  body .comparative .table > * {
+  body .experiences-wrapper .comparative .table > * {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-body .comparative .table > *:nth-child(even) {
+body .experiences-wrapper .comparative .table > *:nth-child(even) {
   background-color: #3e4053;
 }
-body .comparative .table > *:nth-child(odd) {
+body .experiences-wrapper .comparative .table > *:nth-child(odd) {
   background-color: #323444;
 }
-body .comparative .table > *:first-child > * {
+body .experiences-wrapper .comparative .table > *:first-child > * {
   color: #fff;
   font-size: 2em;
   line-height: initial;
   font-weight: 200;
 }
-body .comparative .table > *:last-child {
+body .experiences-wrapper .comparative .table > *:last-child {
   padding: 2.3em 3em;
 }
-body .comparative .table > *:last-child img {
+body .experiences-wrapper .comparative .table > *:last-child img {
   width: -moz-fit-content;
   width: fit-content;
 }
-body .comparative .table > *:last-child > * {
+body .experiences-wrapper .comparative .table > *:last-child > * {
   font-size: 1.5em;
   font-weight: 300;
   font-style: normal;
@@ -593,7 +679,7 @@ body .comparative .table > *:last-child > * {
   letter-spacing: 0.2px;
   color: #ffffff;
 }
-body .comparative .table-col {
+body .experiences-wrapper .comparative .table-col {
   padding: 1.2em 0em;
   font-size: 1.6rem;
   line-height: initial;
@@ -606,40 +692,40 @@ body .comparative .table-col {
   flex-direction: column;
   border-right: 1px solid #4b4d62;
 }
-body .comparative .table-col span {
+body .experiences-wrapper .comparative .table-col span {
   display: none;
 }
 @media all and (max-width: 770px) {
-  body .comparative .table-col span {
+  body .experiences-wrapper .comparative .table-col span {
     display: block;
   }
 }
-body .comparative .table-col:first-child {
+body .experiences-wrapper .comparative .table-col:first-child {
   text-align: left;
   padding: 2.3rem 3rem;
   justify-content: start;
   align-items: start;
 }
 @media all and (max-width: 770px) {
-  body .comparative .table-col:first-child {
+  body .experiences-wrapper .comparative .table-col:first-child {
     display: none;
   }
 }
-body .comparative .table-col i {
+body .experiences-wrapper .comparative .table-col i {
   font-size: 1.5em;
 }
-body .comparative .table-col i.fa-check {
+body .experiences-wrapper .comparative .table-col i.fa-check {
   color: #ea3266;
 }
-body .comparative .table-col i.fa-xmark {
+body .experiences-wrapper .comparative .table-col i.fa-xmark {
   color: #a9a9a9;
 }
 @media all and (max-width: 770px) {
-  body .comparative .table {
+  body .experiences-wrapper .comparative .table {
     font-size: 8px;
   }
 }
-body .comparative .features-group {
+body .experiences-wrapper .comparative .features-group {
   max-width: 1230px;
   margin: 0 auto;
   justify-content: space-between;
@@ -652,18 +738,18 @@ body .comparative .features-group {
   flex-wrap: wrap;
   gap: 10px;
 }
-body .comparative .features-group .feature-title {
+body .experiences-wrapper .comparative .features-group .feature-title {
   font-size: 2rem;
   font-weight: 300;
   color: #fff;
   margin-bottom: 2.4rem;
 }
-body .comparative .features-group .list-item {
+body .experiences-wrapper .comparative .features-group .list-item {
   color: #c0c0c1;
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
-body .comparative .features-group .list-item::before {
+body .experiences-wrapper .comparative .features-group .list-item::before {
   content: "";
   display: inline-block;
   width: 0.9rem;
@@ -673,9 +759,34 @@ body .comparative .features-group .list-item::before {
   margin-right: 1rem;
 }
 @media all and (max-width: 770px) {
-  body .comparative .features-group .list {
+  body .experiences-wrapper .comparative .features-group .list {
     margin-bottom: 5rem;
   }
+}
+body .logos-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b1a26;
+}
+body .logos-bar .logo {
+  margin-bottom: 1rem;
+  padding: 0;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+body .logos-bar .logo img {
+  width: 100%;
+  background-color: #2f3140;
+}
+body section.map {
+  background-color: #1b1926;
+}
+body section.map img {
+  width: 100%;
+  max-height: 55rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body footer .footer-menu,
 body footer .menu {
