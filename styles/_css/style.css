@@ -287,7 +287,7 @@ body header nav.navbar .navbar-toggler {
 }
 @media all and (max-width: 770px) {
   body header nav.navbar {
-    position: relative;
+    position: relative !important;
   }
 }
 body header .swiper {
