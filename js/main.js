@@ -96,6 +96,14 @@ function css(element, style) {
                 "box-shadow": "0 1 px 3 px rgb(0 0 0 / 11%)",
                 "transition": "all 0.25s ease-in",
             })
+            if (window.innerWidth < 768) {
+                css(navEl, {
+                    "background-color": "#fff",
+                    "position": 'relative',
+                    "height": '100px',
+                    "box-shadow": "none",
+                })
+            }
             upButton.style.display = 'flex';
         } else {
             let navEl = document.querySelector('nav');
@@ -106,9 +114,18 @@ function css(element, style) {
                 "box-shadow": "none",
                 "transition": "all 0.25s ease-out"
             })
+            if (window.innerWidth < 768) {
+                css(navEl, {
+                    "background-color": "#fff",
+                })
+            }
             upButton.style.display = 'none';
         }
     })
+
+
+
+
 
     upButton.addEventListener('click', () => {
         window.scrollTo({
