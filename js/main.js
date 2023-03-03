@@ -74,3 +74,63 @@ const swiper2 = new Swiper('.experience-swiper', {
     },
 
 });
+
+function css(element, style) {
+    for (const property in style)
+        element.style[property] = style[property];
+}
+
+(function scrollEffeect() {
+    let upButton = document.querySelector('.toUp-button');
+
+    document.addEventListener('scroll', () => {
+        let scroll = window.scrollY;
+        let nav = document.querySelector('nav').scrollHeight + 100;
+
+        if (scroll > nav) {
+            let navEl = document.querySelector('nav');
+            css(navEl, {
+                "position": 'fixed',
+                "height": 'auto',
+                "background-color": "rgba(27, 26, 38, 1)",
+                "box-shadow": "0 1 px 3 px rgb(0 0 0 / 11%)",
+                "transition": "all 0.25s ease-in",
+            })
+            if (window.innerWidth < 768) {
+                css(navEl, {
+                    "background-color": "#fff",
+                    "position": 'relative',
+                    "height": '100px',
+                    "box-shadow": "none",
+                })
+            }
+            upButton.style.display = 'flex';
+        } else {
+            let navEl = document.querySelector('nav');
+            css(navEl, {
+                "position": 'absolute',
+                "height": '100px',
+                "background-color": "inherit",
+                "box-shadow": "none",
+                "transition": "all 0.25s ease-out"
+            })
+            if (window.innerWidth < 768) {
+                css(navEl, {
+                    "background-color": "#fff",
+                })
+            }
+            upButton.style.display = 'none';
+        }
+    })
+
+
+
+
+
+    upButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    })
+})();

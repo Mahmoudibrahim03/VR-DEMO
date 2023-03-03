@@ -13,7 +13,7 @@ body {
             height: 10rem;
             background-color: transparent;
             width: 100%;
-            z-index: 1000;
+            z-index: 100000;
             padding: 0 4.5rem;
             justify-content: space-between;
             display: flex;
@@ -152,6 +152,10 @@ body {
                 }
 
             }
+
+            @media all and (max-width: 770px) {
+                position: relative !important;
+            }
         }
 
         .swiper {
@@ -190,7 +194,6 @@ body {
                         h1.content-header {
                             font-size: 6.6em;
                             color: #fff;
-                            // line-height: 7.1em;
                             letter-spacing: 0px;
                             font-weight: 600;
 
@@ -201,7 +204,6 @@ body {
 
                         h3.content-subheader {
                             font-size: 6.6em;
-                            // line-height: 7.1em;
                             letter-spacing: 0px;
                             font-weight: 300;
                         }
@@ -264,6 +266,7 @@ body {
 
                 b {
                     margin-right: 1.2rem;
+                    font-weight: 600;
                 }
             }
 
@@ -342,7 +345,6 @@ body {
         background-repeat: no-repeat;
 
         .product-brief {
-            // overflow: hidden;
             font-size: 10px;
 
             .info {
@@ -353,7 +355,6 @@ body {
 
 
                 @media all and (max-width: 1106px) {
-                    // padding-right: 0;
                     padding: 0;
                 }
 
@@ -368,6 +369,7 @@ body {
 
                         b {
                             margin-right: 1.2rem;
+                            font-weight: 600;
                         }
                     }
 
@@ -411,7 +413,6 @@ body {
             .images-container {
                 position: relative;
                 display: flex;
-                // min-height: 41.3rem;
 
                 @media all and (max-width: 1106px) {
                     margin-bottom: 2rem;
@@ -474,7 +475,6 @@ body {
             display: flex;
             justify-content: center;
             padding: 6rem;
-            // gap: 2rem;
 
             .swiper-pagination-bullet {
                 width: 1.5rem;
@@ -538,7 +538,6 @@ body {
         .comparative {
             padding-top: 200px;
             text-align: center;
-            // background-color: #1b1926;
 
             .sec-title {
 
@@ -549,9 +548,13 @@ body {
                     font-style: normal;
                     font-weight: 300;
                     text-align: center;
+                    display: flex;
+                    flex-wrap: wrap;
 
                     b {
                         margin-right: 1.2rem;
+                        font-weight: 600;
+
                     }
                 }
 
@@ -720,9 +723,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // gap: 0.3rem;
-        // padding: 2rem 0;
-        // flex-wrap: wrap;
         background-color: #1b1a26;
 
         .logo {
@@ -798,21 +798,6 @@ body {
                     }
                 }
 
-                // &:first-child {
-                //     ul li::before {
-                //         content: '';
-                //         display: inline-block;
-                //         width: 1.5rem;
-                //         height: 1.5rem;
-                //         background-color: #00f;
-                //         border-radius: 50%;
-                //     }
-
-                //     ul li:first-child::before {
-                //         display: none;
-                //     }
-                // }
-
                 @media all and (max-width: 1000px) {
                     margin-bottom: 3rem;
                 }
@@ -839,5 +824,66 @@ body {
 
             }
         }
+    }
+
+    .toUp-button {
+        width: 4.5rem;
+        height: 4.5rem;
+        border: 2px solid rgb(234, 50, 102);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 7rem;
+        z-index: 10000;
+        color: #fff;
+        right: 2rem;
+        border-radius: 50%;
+        color: rgb(234, 50, 102);
+        font-size: 2.3rem;
+    }
+
+    .buy-now {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: fixed;
+        bottom: 50rem;
+        right: 0;
+        line-height: initial;
+        z-index: 10000;
+
+        button {
+            border: none;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #272727;
+            font-size: 1.4rem;
+            gap: 1rem;
+            height: 5.5rem;
+            padding: 0 2rem;
+
+            b {
+                font-size: 2.4rem;
+                font-weight: 500;
+            }
+
+            &.buy {
+                background-color: #ea3266;
+                color: #fff;
+                font-weight: 1.2rem;
+            }
+        }
+
+        @media screen and (max-width: 670px) {
+            display: none;
+        }
+
+    }
+
+    @media all and (max-width: 420px) {
+        font-size: 9px;
     }
 }
