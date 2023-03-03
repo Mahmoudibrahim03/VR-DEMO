@@ -383,6 +383,7 @@ body section.prespective .title h2 {
 }
 body section.prespective .title h2 b {
   margin-right: 1.2rem;
+  font-weight: 600;
 }
 body section.prespective .title hr {
   height: 5px;
@@ -476,6 +477,7 @@ body .product-wrapper .product-brief .info .title h2 {
 }
 body .product-wrapper .product-brief .info .title h2 b {
   margin-right: 1.2rem;
+  font-weight: 600;
 }
 body .product-wrapper .product-brief .info .title hr {
   height: 5px;
@@ -627,9 +629,12 @@ body .experiences-wrapper .comparative .sec-title h2 {
   font-style: normal;
   font-weight: 300;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 body .experiences-wrapper .comparative .sec-title h2 b {
   margin-right: 1.2rem;
+  font-weight: 600;
 }
 body .experiences-wrapper .comparative .sec-title hr {
   height: 5px;
@@ -916,10 +921,20 @@ body .buy-now button {
 }
 body .buy-now button b {
   font-size: 2.4rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 body .buy-now button.buy {
   background-color: #ea3266;
   color: #fff;
   font-weight: 1.2rem;
+}
+@media screen and (max-width: 670px) {
+  body .buy-now {
+    display: none;
+  }
+}
+@media all and (max-width: 420px) {
+  body {
+    font-size: 9px;
+  }
 }
