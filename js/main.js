@@ -58,3 +58,19 @@ function slideElementsAnimation(slide) {
 swiper.on('slideChangeTransitionStart', function (slide) {
     slideElementsAnimation(slide)
 });
+
+
+const swiper2 = new Swiper('.experience-swiper', {
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    spaceBetween: 33,
+    pagination: {
+        el: '.ex-swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.exper-next',
+        prevEl: '.exper-prev',
+    },
+
+});
