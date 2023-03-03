@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@200;300;400;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;800&display=swap");
 @import "./normalize.css";
 html {
   font-size: 10px;
@@ -34,7 +34,6 @@ button.find-us {
   line-height: 45px;
   letter-spacing: 0.1px;
   font-size: 1.5rem;
-  border: 1px solid #303030;
   box-sizing: content-box;
   color: #fff;
   margin: 0 17px;
@@ -357,6 +356,326 @@ body header .swiper .swiper-wrapper .swiper-slide .content button.watch-video i.
 }
 body header .swiper .swiper-wrapper .swiper-slide .content .button-label {
   font-size: 20px;
+}
+body section.prespective {
+  padding: 14.5rem 0;
+  display: flex;
+  justify-content: center;
+  background-image: url("../assets/images/background-1.jpg");
+  background-color: #1c1a27;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  gap: 3rem;
+}
+body section.prespective .title h2 {
+  color: #fff;
+  font-size: 5rem;
+  line-height: 5rem;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+}
+body section.prespective .title h2 b {
+  margin-right: 1.2rem;
+}
+body section.prespective .title hr {
+  height: 5px;
+  background-color: #ea3266;
+  width: 5rem;
+  margin: 3.5rem auto;
+  margin-bottom: 6rem;
+  opacity: 1;
+}
+body section.prespective .feature {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 0;
+}
+body section.prespective .feature-card,
+body section.prespective .feature .item {
+  padding: 72px 31px 82px 41px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f3140;
+  width: 38rem;
+  min-width: 38rem;
+}
+@media all and (max-width: 1200px) {
+  body section.prespective .feature-card,
+  body section.prespective .feature .item {
+    width: 90%;
+    margin: 0 auto;
+    min-width: 0;
+  }
+}
+body section.prespective .feature-card-img,
+body section.prespective .feature .item-img {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 4.5rem;
+}
+body section.prespective .feature-card-title,
+body section.prespective .feature .item-title {
+  font-size: 2.7rem;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+body section.prespective .feature-card-title strong,
+body section.prespective .feature .item-title strong {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+body section.prespective .feature-card-description,
+body section.prespective .feature .item-description {
+  font-size: 1.6rem;
+  line-height: 26px;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+body .product-wrapper {
+  background-image: url("../assets/images/background-2.jpg");
+  background-color: #1c1a27;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body section.product-preview {
+  background-color: #1b1a26;
+}
+body section.product-preview img {
+  max-width: 1386px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body section.experiences {
+  background-color: #1b1926;
+  overflow: hidden;
+  position: relative;
+}
+body section.experiences .swiper-slide {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media all and (max-width: 1000px) {
+  body section.experiences .swiper-slide {
+    width: 90%;
+  }
+}
+body section.experiences .swiper-slide img {
+  width: 100%;
+}
+body section.experiences .ex-swiper-pagination {
+  display: flex;
+  justify-content: center;
+  padding: 6rem;
+}
+body section.experiences .ex-swiper-pagination .swiper-pagination-bullet {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 10px;
+}
+body section.experiences .navigations-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1849px;
+  z-index: 10000;
+}
+@media all and (max-width: 1000px) {
+  body section.experiences .navigations-container {
+    display: none;
+  }
+}
+body section.experiences .navigations-container .navigations {
+  position: relative;
+}
+body section.experiences .exper-next,
+body section.experiences .exper-prev {
+  top: calc(50% - 70px);
+}
+body section.experiences .exper-next:after,
+body section.experiences .exper-prev:after {
+  background-color: #fff;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  color: #31c8a2 !important;
+  padding: 0;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+body section.experiences .exper-next {
+  right: 22%;
+}
+body section.experiences .exper-prev {
+  left: 22%;
+}
+body .comparative {
+  padding-top: 200px;
+  text-align: center;
+  background-color: #1b1926;
+}
+body .comparative .sec-title h2 {
+  color: #fff;
+  font-size: 5rem;
+  line-height: 5rem;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+}
+body .comparative .sec-title h2 b {
+  margin-right: 1.2rem;
+}
+body .comparative .sec-title hr {
+  height: 5px;
+  background-color: #ea3266;
+  width: 5rem;
+  margin: 3.5rem auto;
+  margin-bottom: 6rem;
+  opacity: 1;
+}
+body .comparative .table {
+  max-width: 1230px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 10px;
+  border-bottom: 1px solid #4b4d62;
+  padding-left: 1rem;
+}
+body .comparative .table > * {
+  display: grid;
+  grid-template-columns: 55% 1fr 1fr 1fr;
+  border-bottom: 1px dashed #4b4d62;
+}
+@media all and (max-width: 770px) {
+  body .comparative .table > * {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+body .comparative .table > *:nth-child(even) {
+  background-color: #3e4053;
+}
+body .comparative .table > *:nth-child(odd) {
+  background-color: #323444;
+}
+body .comparative .table > *:first-child > * {
+  color: #fff;
+  font-size: 2em;
+  line-height: initial;
+  font-weight: 200;
+}
+body .comparative .table > *:last-child {
+  padding: 2.3em 3em;
+}
+body .comparative .table > *:last-child img {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+body .comparative .table > *:last-child > * {
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+body .comparative .table-col {
+  padding: 1.2em 0em;
+  font-size: 1.6rem;
+  line-height: initial;
+  color: #c0c0c1;
+  font-style: normal;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-right: 1px solid #4b4d62;
+}
+body .comparative .table-col span {
+  display: none;
+}
+@media all and (max-width: 770px) {
+  body .comparative .table-col span {
+    display: block;
+  }
+}
+body .comparative .table-col:first-child {
+  text-align: left;
+  padding: 2.3rem 3rem;
+  justify-content: start;
+  align-items: start;
+}
+@media all and (max-width: 770px) {
+  body .comparative .table-col:first-child {
+    display: none;
+  }
+}
+body .comparative .table-col i {
+  font-size: 1.5em;
+}
+body .comparative .table-col i.fa-check {
+  color: #ea3266;
+}
+body .comparative .table-col i.fa-xmark {
+  color: #a9a9a9;
+}
+@media all and (max-width: 770px) {
+  body .comparative .table {
+    font-size: 8px;
+  }
+}
+body .comparative .features-group {
+  max-width: 1230px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 140px;
+  padding-bottom: 65px;
+  padding-left: 1rem;
+  color: #c0c0c1;
+  font-size: 1.6rem;
+  text-align: left;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+body .comparative .features-group .feature-title {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 2.4rem;
+}
+body .comparative .features-group .list-item {
+  color: #c0c0c1;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+body .comparative .features-group .list-item::before {
+  content: "";
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: #ea3266;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+@media all and (max-width: 770px) {
+  body .comparative .features-group .list {
+    margin-bottom: 5rem;
+  }
 }
 body footer .footer-menu,
 body footer .menu {

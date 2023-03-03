@@ -18,3 +18,21 @@
       modules: [Navigation, Pagination],
 
   });
+  const swiper2 = new Swiper('.experience-slider', {
+      // Optional parameters
+      loop: true,
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+          el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+      modules: [Navigation, Pagination],
+
+  });
