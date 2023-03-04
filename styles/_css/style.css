@@ -571,6 +571,7 @@ body section.experiences .ex-swiper-pagination .swiper-pagination-bullet {
   width: 1.5rem;
   height: 1.5rem;
   margin: 0 10px;
+  flex-shrink: 0;
 }
 body section.experiences .navigations-container {
   position: absolute;
@@ -619,8 +620,13 @@ body .experiences-wrapper {
   background-color: #1b1926;
 }
 body .experiences-wrapper .comparative {
-  padding-top: 200px;
+  padding-top: 20rem;
   text-align: center;
+}
+@media all and (max-width: 420px) {
+  body .experiences-wrapper .comparative {
+    padding-top: 10rem;
+  }
 }
 body .experiences-wrapper .comparative .sec-title h2 {
   color: #fff;
@@ -629,12 +635,18 @@ body .experiences-wrapper .comparative .sec-title h2 {
   font-style: normal;
   font-weight: 300;
   text-align: center;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
 body .experiences-wrapper .comparative .sec-title h2 b {
   margin-right: 1.2rem;
   font-weight: 600;
+}
+@media all and (max-width: 420px) {
+  body .experiences-wrapper .comparative .sec-title h2 {
+    font-size: 4rem;
+  }
 }
 body .experiences-wrapper .comparative .sec-title hr {
   height: 5px;
@@ -648,7 +660,7 @@ body .experiences-wrapper .comparative .table {
   max-width: 1230px;
   margin: 0 auto;
   text-align: center;
-  font-size: 10px;
+  font-size: 1rem;
   border-bottom: 1px solid #4b4d62;
   padding-left: 1rem;
 }
@@ -739,8 +751,8 @@ body .experiences-wrapper .comparative .features-group {
   max-width: 1230px;
   margin: 0 auto;
   justify-content: space-between;
-  padding-top: 140px;
-  padding-bottom: 65px;
+  padding-top: 14rem;
+  padding-bottom: 6.5rem;
   padding-left: 1rem;
   color: #c0c0c1;
   font-size: 1.6rem;
